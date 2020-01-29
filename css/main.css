@@ -951,12 +951,12 @@ pre .javascript .function {
 }
 @media (min-width: 1200px) {
   .main-inner {
-    width: 1160px;
+    width: 1000px;
   }
 }
 @media (min-width: 1600px) {
   .main-inner {
-    width: 73%;
+    width: 60%;
   }
 }
 .header {
@@ -969,12 +969,12 @@ pre .javascript .function {
 }
 @media (min-width: 1200px) {
   .header-inner {
-    width: 1160px;
+    width: 1000px;
   }
 }
 @media (min-width: 1600px) {
   .header-inner {
-    width: 73%;
+    width: 60%;
   }
 }
 .headband {
@@ -1187,7 +1187,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff951d;
+  background: #b6d0ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1418,12 +1418,12 @@ pre .javascript .function {
 }
 @media (min-width: 1200px) {
   .footer-inner {
-    width: 1160px;
+    width: 1000px;
   }
 }
 @media (min-width: 1600px) {
   .footer-inner {
-    width: 73%;
+    width: 60%;
   }
 }
 .with-love {
@@ -2182,12 +2182,12 @@ ul.breadcrumb li + li:last-child {
 }
 @media (min-width: 1200px) {
   .header {
-    width: 1160px;
+    width: 1000px;
   }
 }
 @media (min-width: 1600px) {
   .header {
-    width: 73%;
+    width: 60%;
   }
 }
 @media (max-width: 991px) {
