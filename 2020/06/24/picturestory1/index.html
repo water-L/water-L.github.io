@@ -34,7 +34,7 @@
     mediumzoom: false,
     lazyload: false,
     pangu: false,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    comments: {"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":-2,"activeClass":"gitalk"},
     algolia: {
       appID: '',
       apiKey: '',
@@ -284,6 +284,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -465,6 +466,26 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: 'cac4469e4294d389e58f',
+      clientSecret: '656b71635769faedc2c63e25eea71a3db58fd55c',
+      repo: 'blogcomments',
+      owner: 'water-L',
+      admin: ['water-L'],
+      id: '136fe05444888e68122ee73d64700579',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
